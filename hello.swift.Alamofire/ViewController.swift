@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        helloAlamofire()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +21,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func helloAlamofire() {
+        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
+            .response { request, response, data, error in
+                print("request: \(request)")
+                print("data: \(data)")
+                print("error: \(error)")
+            }
+    }
+    
 }
 
