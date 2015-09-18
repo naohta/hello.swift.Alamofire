@@ -13,7 +13,21 @@
 		354A9E4E1BABA03800D8A187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354A9E4D1BABA03800D8A187 /* Assets.xcassets */; };
 		354A9E511BABA03800D8A187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 354A9E4F1BABA03800D8A187 /* LaunchScreen.storyboard */; };
 		35CA55EC1BABB00600B1F86A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA55EB1BABB00600B1F86A /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		35CA55F41BABB61700B1F86A /* Alamofire.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35CA55F31BABB61700B1F86A /* Alamofire.framework.dSYM */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35CA55EE1BABB52300B1F86A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				35CA55F41BABB61700B1F86A /* Alamofire.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		354A9E431BABA03800D8A187 /* hello.swift.Alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hello.swift.Alamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +38,7 @@
 		354A9E501BABA03800D8A187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		354A9E521BABA03800D8A187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35CA55EB1BABB00600B1F86A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		35CA55F31BABB61700B1F86A /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +56,7 @@
 		354A9E3A1BABA03800D8A187 = {
 			isa = PBXGroup;
 			children = (
+				35CA55F31BABB61700B1F86A /* Alamofire.framework.dSYM */,
 				35CA55EB1BABB00600B1F86A /* Alamofire.framework */,
 				354A9E451BABA03800D8A187 /* hello.swift.Alamofire */,
 				354A9E441BABA03800D8A187 /* Products */,
@@ -79,6 +95,7 @@
 				354A9E401BABA03800D8A187 /* Frameworks */,
 				354A9E411BABA03800D8A187 /* Resources */,
 				35CA55ED1BABB1EB00B1F86A /* ShellScript */,
+				35CA55EE1BABB52300B1F86A /* CopyFiles */,
 			);
 			buildRules = (
 			);
