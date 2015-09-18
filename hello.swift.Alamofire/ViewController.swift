@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
     func helloAlamofire() {
         Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
-            .responseJSON { (_, _, result) -> Void in
+            .responseJSON { _, _, result in
                 print(NSDate(), result)
                 debugPrint(NSDate(), result)
         }
